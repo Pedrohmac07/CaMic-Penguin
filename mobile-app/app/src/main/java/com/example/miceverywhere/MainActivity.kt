@@ -32,6 +32,7 @@ import java.io.ByteArrayOutputStream
 import java.io.DataOutputStream
 import java.net.Socket
 import java.util.concurrent.Executors
+import android.view.WindowManager
 
 class MainActivity : AppCompatActivity() {
 
@@ -60,6 +61,7 @@ class MainActivity : AppCompatActivity() {
         etIp = findViewById(R.id.etIpAddress)
         btnConnect = findViewById(R.id.btnConnect)
         btnSwitch = findViewById(R.id.btnSwitchCamera)
+        window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
 
         if (allPermissionsGranted()) {
             startCamera()
