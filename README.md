@@ -1,4 +1,7 @@
-# CaMic Penguin 🐧
+# Micam Linux (Python) 🐧
+### This repository is not being updated, working on another made with rust
+
+
 
 High-performance Android-to-Linux Webcam and Microphone bridge using raw TCP Sockets.
 
